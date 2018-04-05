@@ -15,7 +15,47 @@ source(file="loyo.CV.r") #Script for calculating leave-one-year-out cross valida
 
 #Load data:
 load("../data/chyp_depthint.rda") #Depth-integrated abundance data (ind.m2) for C. hyperboreus stages
-load("../data/predframe.rda") #Dataframe for spatial predictions created based on PIOMAS model grid
+#This dataset contains standardized depth-integrated data (surface-bottom at least down to 100m) based on original data in chyp_orig.rda
+
+#Columns:
+#1: Sampling year
+#2: Sampling month
+#3: Sampling day (day of month)
+#4: Sampling time (0-24, often not given)
+#5: Julian day (1-365)
+#6: Decimal latitude 
+#7: Decimal longitude (negative values for western hemisphere)
+#8: x-coordinate Azimuthal Equidistant (distance from north pole)
+#9: y-coordinate Azimuthal Equidistant (distance from north pole)
+#10: Distance from shelf (<500m depth) in km
+#11: Bottom depth at station
+#12: Upper sampling depth
+#13: Lower sampling depth
+#14: Total sampling depth
+#15: Sampling mesh
+#16: Dataset (see data_sources_final.xlsx)
+#17: Dataset ID (see data_sources_final.xlsx)
+#18: Sampling gear
+#19: Sea surface salinity at the time and location of sampling according to PIOMAS (Pan-arctic Ice/Ocean Modeling and Assimilation System, Zhang and Rothrock, 2003)
+#20: Sea ice concentration at the time and location of sampling according to PIOMAS (Pan-arctic Ice/Ocean Modeling and Assimilation System, Zhang and Rothrock, 2003)
+#21-27: Depth-integrated C.hyperboreus abundance data (ind./m2) per copepodid stage C1-C5 and adult females and males (C6f/m)
+#28-34: Depth-integrated abundance data (columns 21-27) corrected for varying body width/mesh size ratio 
+
+load("../data/predframe.rda") #Dataframe for spatial predictions created based on PIOMAS model grid (Pan-arctic Ice/Ocean Modeling and Assimilation System, Zhang and Rothrock, 2003)
+#Columns:
+#1: Decimal latitude 
+#2: Decimal longitude (negative values for western hemisphere)
+#3: Bottom depth 
+#4: Land mask
+#5: Sea ice concentration averaged per model grid in June (1930-2016)
+#6: Sea surface temperature averaged per model grid in June (1930-2016)
+#7: Sea surface salinity averaged per model grid in June (1930-2016)
+#8: x-coordinate Azimuthal Equidistant (distance from north pole)
+#9: y-coordinate Azimuthal Equidistant (distance from north pole)
+#10: Average total sampling depth in chyp_depthint.rda
+#11: June
+#12: Average sampling year in chyp_depthint.rda
+
 
 chyp_depthint$totdep<-log(chyp_depthint$totdep) #Log-transform depth range to reduce effect of outliers
 lifestages_hyp<-c(paste0("Chypc",1:5),paste0("Chypc6",c("f","m"))) #Name developmental stages

@@ -8,7 +8,8 @@ pred_c<-get(load(file="../data/carb_weight_stages.rda")) #Carbon weights per dev
 #Data for stages N6-C3 from Ashjian et al. 2003: Annual cycle in abundance, distribution, and size in relation to hydrography of important copepod species in the western Arctic Ocean. Deep Sea Res Part I Oceanogr Res Pap 50(10–11):1235–1261.
 #We assumed weight of N2=N3 unfed and N5=average of N4 and N6
 
-load("../data/phyto_daymean.rda") #Averaged daily phytoplankton/phyto+microzooplankton concentrations in upper 60 m for 3 regions in BIOMAS
+load("../data/phyto_daymean.rda") #Daily average phytoplankton concentrations/phytoplankton+microzooplankton in upper 60 m 
+#for 3 different regions in 1987 and 2012 from BIOMAS: coupled pan-arctic Biology/Ice/Ocean Modeling and Assimilation System (Zhang et al. 2015)
 load("../data/filtrations.rda") #Observed filtration rates per stage from Campbell et al. 2009: Mesozooplankton prey preference and grazing impact in the western Arctic Ocean. Deep Res Part II Top Stud Oceanogr 56(17):1274–1289.
 
 ####Setup analysis####
