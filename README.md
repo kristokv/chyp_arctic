@@ -10,9 +10,9 @@ energy_budget.r: Estimate <i>Calanus hyperboreus</i> energy requirements to deve
 
 
 The <b>data</b> folder contains the following R data files:<br>
-chyp_orig.rda: Original <i>Calanus hyperboreus</i> abundance data in ind.m2 or ind.m3<br>   
-chyp_depthint.rda: Depth integrated <i>Calanus hyperboreus</i> abundance data in ind.m2<br>     
-carb_weight_stages.rda: Stage-specific body weights (see <i>energy_budget.r</i>)<br>           
-filtrations.rda: Stage-specific filtration rates (see <i>energy_budget.r</i>)<br>     
-phyto_daymean.rda: Averaged daily phytoplankton/phyto+microzooplankton concentrations (see <i>energy_budget.r</i>/<i>c3_seasonal.r</i>)<br>          
+chyp_orig.rda: Original <i>Calanus hyperboreus</i> abundance data in ind.m2 or ind.m3<br>
+chyp_depthint.rda: Depth integrated <i>Calanus hyperboreus</i> abundance data in ind.m2<br>
+carb_weight_stages.rda: Stage-specific body weights (see <i>energy_budget.r</i>)<br>    
+filtrations.rda: Stage-specific filtration rates (see <i>energy_budget.r</i>)<br>
+phyto_daymean.rda: Averaged daily phytoplankton/phyto+microzooplankton concentrations (see <i>energy_budget.r</i>/<i>c3_seasonal.r</i>)<br>
 predframe.rda: Dataframe for GAM predictions (see <i>gams_chyp.r</i>)<br> 
