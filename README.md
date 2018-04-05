@@ -1,6 +1,6 @@
 #  chyp_arctic 
 
-<b>R code (rcode folder) and input files (data folder) for analyses of <i>Calanus hyperboreus</i> distribution and energy requirements.<b/>
+<b>R code (rcode folder) and input files (data folder) for analyses of <i>Calanus hyperboreus</i> distribution and energy requirements.</b>
 
 The rcode folder contains:<br>
 gams_chyp.r: Fit GAMs of <i>Calanus hyperboreus</i> abundance data<br> 
