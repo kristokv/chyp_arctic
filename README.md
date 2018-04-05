@@ -11,7 +11,7 @@ The <b>rcode</b> folder contains the following R scripts:<br>
 
 The <b>data</b> folder contains the following R data files:<br>
 <i>chyp_orig.rda</i>: Original Chyp abundance data in ind.m2 or ind.m3 (see <i>c3_seasonal.r</i>)<br>
-<i>chyp_depthint.rda</i>: Depth integrated Chyp abundance data in ind.m2 (see <i>gams_chyp.r</i>)<br>
+<i>chyp_depthint.rda</i>: Standardized depth integrated Chyp abundance data in ind.m2 (see <i>gams_chyp.r</i>)<br>
 <i>carb_weight_stages.rda</i>: Stage-specific Chyp body weights (see <i>energy_budget.r</i>)<br>
 <i>filtrations.rda</i>: Stage-specific Chyp filtration rates (see <i>energy_budget.r</i>)<br>
 <i>phyto_daymean.rda</i>: Averaged daily phytoplankton/phyto+microzooplankton concentrations (see <i>energy_budget.r</i>/<i>c3_seasonal.r</i>)<br>
