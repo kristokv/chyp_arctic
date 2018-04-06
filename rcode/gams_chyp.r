@@ -33,9 +33,9 @@ load("../data/chyp_depthint.rda") #Depth-integrated abundance data (ind.m2) for 
 #13: Lower sampling depth
 #14: Total sampling depth
 #15: Sampling mesh
-#16: Dataset (see data_sources_final.xlsx)
-#17: Dataset ID (see data_sources_final.xlsx)
-#18: Sampling gear
+#16: Sampling gear
+#17: Dataset (see data_sources_final.xlsx)
+#18: Dataset ID (see data_sources_final.xlsx)
 #19: Sea surface salinity at the time and location of sampling according to PIOMAS (Pan-arctic Ice/Ocean Modeling and Assimilation System, Zhang and Rothrock, 2003)
 #20: Sea ice concentration at the time and location of sampling according to PIOMAS (Pan-arctic Ice/Ocean Modeling and Assimilation System, Zhang and Rothrock, 2003)
 #21-27: Depth-integrated C.hyperboreus abundance data (ind./m2) per copepodid stage C1-C5 and adult females and males (C6f/m)

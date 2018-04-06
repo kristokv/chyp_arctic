@@ -21,18 +21,16 @@ load("../data/chyp_orig.rda") #Depth-specific abundance data (ind.m2 or ind.m3) 
 #5: Julian day (1-365)
 #6: Decimal latitude 
 #7: Decimal longitude (negative values for western hemisphere)
-#8: x-coordinate Azimuthal Equidistant (distance from north pole)
-#9: y-coordinate Azimuthal Equidistant (distance from north pole)
-#10: Distance from shelf (<500m depth) in km
-#11: Bottom depth at station
-#12: Upper sampling depth
-#13: Lower sampling depth
-#14: Sampling mesh
-#15: Dataset (see data_sources_final.xlsx)
-#16: Dataset ID (see data_sources_final.xlsx)
-#17: Sampling gear
-#18-24: C.hyperboreus abundance data (ind./m3) per copepodid stage C1-C5 and adult females and males (C6f/m)
-#25-32: C.hyperboreus abundance data (ind./m2) per copepodid stage C1-C5 and adult females and males (C6f/m)
+#8: Distance from shelf (<500m depth) in km
+#9: Bottom depth at station
+#10: Upper sampling depth
+#11: Lower sampling depth
+#12: Sampling mesh
+#13: Sampling gear
+#14: Dataset (see data_sources_final.xlsx)
+#15: Dataset ID (see data_sources_final.xlsx)
+#16-22: C.hyperboreus abundance data (ind./m3) per copepodid stage C1-C5 and adult females and males (C6f/m)
+#23-30: C.hyperboreus abundance data (ind./m2) per copepodid stage C1-C5 and adult females and males (C6f/m)
 
 load("../data/phyto_daymean.rda") #Daily average phytoplankton concentrations/phytoplankton+microzooplankton in upper 60 m 
 #for 3 different regions in 1987 and 2012 from BIOMAS: coupled pan-arctic Biology/Ice/Ocean Modeling and Assimilation System (Zhang et al. 2015)
