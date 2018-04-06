@@ -16,4 +16,4 @@ The <b>data</b> folder contains the following R data files:<br>
 <i>filtrations.rda</i>: Stage-specific Chyp filtration rates (see <i>energy_budget.r</i>)<br>
 <i>phyto_daymean.rda</i>: Averaged daily phytoplankton/phyto+microzooplankton concentrations (see <i>energy_budget.r</i>/<i>c3_seasonal.r</i>)<br>
 <i>predframe.rda</i>: Dataframe for GAM predictions (see <i>gams_chyp.r</i>)<br> 
-As well as <i>data_sources_final.xlsx)</i>, a full list of data sources for Chyp abundance data.
+As well as <i>chyp_data_sources.xlsx</i>, a full list of data sources for Chyp abundance data.
