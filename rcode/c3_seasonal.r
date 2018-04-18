@@ -87,8 +87,8 @@ for(i in 1:3){
   if(i==1){legend("topright",legend=c(1987,2012),title="Growth season",bty="n",
                   pch=20,col=c(adjustcolor("#009E73",alpha.f=0.4),adjustcolor("#009E73",alpha.f=0.2)))}
   if(i==3){Axis(side=1);mtext(side=1,"Day-of-year",line=1.1,cex=0.8)}
-  if(i==2){mtext(side=2,expression(paste("C3 concentration (log[ind.m"^"-3","+1])")),line=1,adj=1.25,cex=0.8)}
-}
+  if(i==2){mtext(side=2,expression(paste("C3 concentration (log"["e"],"ind.m"^"-3","+1)")),line=1,adj=1.25,cex=0.8)}
+  }
 mtext(side=4,expression(paste("Phytoplankton concentration (μgCm"^"-3",")")),outer=TRUE,line=0.75,cex=0.8)
 
 

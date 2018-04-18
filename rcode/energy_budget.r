@@ -78,8 +78,8 @@ filtration<-seq(min(filtrations$F_m3_ind_day),max(filtrations$F_m3_ind_day),by=0
 
 
 ####How many days are the requirements exceeded?####
-layout(matrix(1:2,ncol=1),heights=c(0.6,0.4))
-par(mar=rep(0,4),oma=c(1.75,1.75,0.1,0.1),ps=8,mgp=c(3,0.4,0))
+layout(matrix(1:2,ncol=1),heights=c(0.62,0.38))
+par(mar=c(0.2,0,0,0),oma=c(1.5,1.5,0.1,0.1),ps=8,mgp=c(3,0.2,0))
 
 plot(x=NULL,y=NULL,ylim=c(360,5),xlim=c(min(filtration),max(filtration-0.00002)),axes=FALSE,frame=TRUE)
 Axis(side=2,at=c(1,100,200,300,365))
@@ -126,10 +126,9 @@ legend("topright",legend=c(1987,2012),title="Growth season",bty="n",y.intersp=0.
                 pch=20,col=c(adjustcolor("#009E73",alpha.f=0.4),adjustcolor("#009E73",alpha.f=0.2)))
 mtext(side=2,outer=FALSE,"Day-of-year energy intake > requirement",line=1)
 
-#Boxplot filtration rates per stage:
-plot(x=NULL,y=NULL,ylim=c(0.5,5.5),xlim=c(min(filtration),max(filtration-0.00002)),axes=FALSE,frame=TRUE)
-boxplot(filtrations$F_m3_ind_day~filtrations$Stage,add=T,horizontal=TRUE,axes=FALSE,
-        boxwex=0.5,pch=20,col="ivory")
+#Plot filtration rates per stage:
+plot(x=NULL,y=NULL,ylim=c(1,5.2),xlim=c(min(filtration),max(filtration-0.00002)),axes=FALSE,frame=TRUE)
+stripchart(filtrations$F_m3_ind_day~filtrations$Stage,add=T,pch=20,cex=.5)
 axis(2, at=1:5, labels=unique(filtrations$Stage))
 axis(1,at=c(0,2e-4,4e-4,6e-4),labels=10^4*c(0,2e-4,4e-4,6e-4) )
 abline(h=6e-6,lty=2);abline(h=0.00034,lty=2)

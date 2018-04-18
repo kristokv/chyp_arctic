@@ -219,8 +219,8 @@ for(fam in fams){
     #Do not include zeroes for gaussian:
     if(fam=="gaussian"){
       text(rep(0.5,5),seq(2.5,by=2,length=4),format(round(seq(min(vals),max(vals),length=5),1)[-1],trim=T))}
-  mtext(side=2.5,"Observations",outer=FALSE,line=3.5)
-  mtext(side=2.5,expression(paste("log(ind.",m^-2,")")),outer=FALSE,line=1.75)
+  mtext(side=2,"Observations",outer=FALSE,line=3.5)
+  mtext(side=2,expression(paste("log"["e"],"ind.",m^-2)),outer=FALSE,line=1.75)
   }
   if(fam=="binomial"){
     points(x=2.5,y=2.5,pch=21,bg="dark grey",cex=1);
@@ -238,7 +238,7 @@ for(fam in fams){
     mtext(side=2,"(probability)",outer=FALSE,line=1.75)
   }else{
     mtext(side=2,"Predictions",outer=FALSE,line=3.5)
-    mtext(side=2,expression(paste("log(ind.",m^-2,")")),outer=FALSE,line=1.75)
+    mtext(side=2,expression(paste("log"["e"],"ind.",m^-2)),outer=FALSE,line=1.75)
   }
   
 }
