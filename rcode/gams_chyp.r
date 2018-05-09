@@ -163,7 +163,7 @@ for(fam in fams){
   }
   
   #Define color scale:
-  rbPal <- colorRampPalette(c("blue","blue","green","yellow","red"))(10)
+  rbPal <- colorRampPalette(c("#253494","#2c7fb8","#41b6c4","#a1dab4","#ffffcc"))(10)
   pred_all$col<- rbPal[as.numeric(cut(pred_all$pred,breaks = 10))]
   
   #Plot predictions per stage:

@@ -46,7 +46,7 @@ shelfmax<-c(1000,1000,50)
 
 #Plot:
 legends<-c("(a)","(b)","(c)")
-cbPalette <- c("magenta","sky blue","yellow")
+cbPalette <- c("#fdae61","#abd9e9","#2c7bb6")
 par(mfrow=c(3,2),mar=c(0,1,0,0.5),oma=c(2.2,0,.5,2),ps=8,mgp=c(3,0.5,0))
 
 #Loop through and plot for the 3 regions:
@@ -76,14 +76,14 @@ for(i in 1:3){
   
   #Plot C3 concentrations:
   par(new = T)
-  plot(subdat_shallow$julday,log(subdat_shallow[,paste0(j,"_abunm3")]+1),pch=20,col="#D55E00",cex=0.25,
+  plot(subdat_shallow$julday,log(subdat_shallow[,paste0(j,"_abunm3")]+1),pch=17,col="black",cex=0.5,
        xlim=c(1,365),ylim=c(0,7),axes=FALSE);box()
   Axis(side=2,at=seq(0,6,by=2),labels=seq(0,6,by=2))
-  points(subdat_deep$julday,log(subdat_deep[,paste0(j,"_abunm3")]+1),pch=20,col="#0072B2",cex=0.25)
+  points(subdat_deep$julday,log(subdat_deep[,paste0(j,"_abunm3")]+1),pch=20,col="dark grey",cex=0.4)
   
   #Add legends:
-  if(i==1){legend("topleft",legend=c("<200m",">200m"),title="C3 concentration",bty="n",
-                  pch=20,col=c("#D55E00","#0072B2"))}
+  if(i==1){legend("topleft",legend=c("<200m",">200m"),title="C3",bty="n",
+                  pch=c(17,20),col=c("black","dark grey"))}
   if(i==1){legend("topright",legend=c(1987,2012),title="Growth season",bty="n",
                   pch=20,col=c(adjustcolor("#009E73",alpha.f=0.4),adjustcolor("#009E73",alpha.f=0.2)))}
   if(i==3){Axis(side=1);mtext(side=1,"Day-of-year",line=1.1,cex=0.8)}
