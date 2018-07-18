@@ -69,7 +69,7 @@ for(i in 1:3){
   #Plot phytoplankton concentrations:
   phyto_daymean_1987<-phyto_daymean[,paste0("phyto_",1987,"_lat>",latmin[i],".shelf>",shelfmin[i])]
   phyto_daymean_2012<-phyto_daymean[,paste0("phyto_",2012,"_lat>",latmin[i],".shelf>",shelfmin[i])]
-  plot(phyto_daymean_1987,type="l",col="white", axes=F, xlab=NA, ylab=NA,ylim=c(0,75000))
+  plot(phyto_daymean_1987,type="l",col="white", axes=F, xlab=NA, ylab=NA,ylim=c(0,95000))
   polygon(x=c(1:365,365:1),y=c(phyto_daymean_2012,rep(0,365)),col=adjustcolor("#009E73",alpha.f=0.2),border=NA)
   polygon(x=c(1:365,365:1),y=c(phyto_daymean_1987,rep(0,365)),col=adjustcolor("#009E73",alpha.f=0.4),border=NA)
   axis(side = 4)
